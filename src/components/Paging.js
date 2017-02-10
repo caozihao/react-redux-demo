@@ -2,7 +2,7 @@ import React,{ PropTypes,Component } from "react"
 import { connect } from "react-redux"
 import { changePage,CHANGE_PAGE,getCollectionList,MODULE_COLLECTION} from "../actions/index"
 
-export default class Paging extends Component {
+class Paging extends Component {
 
     handClick (pageNo,props){
         const { dispatch} = props;

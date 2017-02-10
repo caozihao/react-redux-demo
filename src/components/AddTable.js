@@ -5,7 +5,7 @@ import { connect } from "react-redux"
 import {TASK} from "../actions/index"
 let file = null;
 
-export default class AddTable extends Component{
+class AddTable extends Component{
 
     closeTaskPopup(){
         const { dispatch} = this.props;
