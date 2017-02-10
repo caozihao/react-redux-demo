@@ -1,5 +1,5 @@
 # react-redux-demo 
-# 如何安装
+# 安装运行
 1，请先确保安装了node和bower<br>
 2，项目根目录下，运行 "npm install" 和 "bower install"<br>
 3，运行 "npm run start"<br>
