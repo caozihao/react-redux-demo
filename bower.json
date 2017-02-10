@@ -1,0 +1,35 @@
+{
+  "name": "mrdsj",
+  "description": "from Hiekn",
+  "main": "",
+  "authors": [
+    "Skull"
+  ],
+  "license": "CC0-1.0",
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack",
+    "babel",
+    "react-transform"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

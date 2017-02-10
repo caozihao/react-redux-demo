@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "less-common.less";
+
+/* tag start */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, select, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #999;
+  font: 12px/20px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  text-align: left;
+  _text-align: center;
+  background: white;
+}
+small {
+  -webkit-text-size-adjust: none;
+}
+fieldset, img {
+  border: 0;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul, li {
+  list-style: none;
+}
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+}
+span {
+  word-break: break-all;
+  white-space: normal;
+}
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #666;
+}
+a :hover {
+  color: #0a5f9f;
+}
+img[border], object[click] {
+  display: none;
+}
+input, textarea {
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  padding: 0 5px;
+}
+button, button:hover, button:focus {
+  outline: none;
+}
+img {
+  border: 0;
+}
+input {
+  outline: 0;
+  padding: 0 5px;
+}
+s {
+  text-decoration: none;
+  color: #aaa;
+  margin: 0 8px;
+}
+/* tag end */
+
+/* class start */
+.close {
+  cursor: pointer;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.hidden {
+  overflow: hidden;
+}
+.l, .left, .fl {
+  float: left;
+}
+.r, .right, .fr {
+  float: right;
+}
+/* class end */
+
+:focus {
+  outline: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+}
+.clearfix {
+  zoom: 1;
+  _height: 1px;
+}
+.line-hidden {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block
+}
+html, body, .all {
+  height: 100%;
+}
+body  .all {
+  height: auto;
+  min-height: 100%;
+}
+#sys-mask {
+  height: 100%;
+  width: 100%;
+  background: black;
+  z-index: 999;
+  position: absolute;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+}
+.sys-dialog {
+  overflow: hidden;
+  border-radius: 2px;
+  width: 600px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  top: 24.3%;
+  background: #fff;
+  z-index: 999;
+  margin-bottom: 0;
+  .sys-dialog-head {
+    background: @main-color;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: left;
+    height: 35px;
+    padding: 6px 15px;
+
+    .sys-dialog-close {
+      position: absolute;
+      right: 3px;
+      top: -3px;
+      width: 40px;
+      height: 40px;
+      background: url(../images/sys-dialog-close.png) no-repeat center center;
+      cursor: pointer;
+    }
+  }
+  .sys-dialog-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    .super-confirm-input {
+      width: 100%;
+      padding: 4px;
+      margin: 5px
+    }
+  }
+  .sys-dialog-foot {
+    background: white;
+    text-align: right;
+    height: 65px;
+    padding: 15px;
+    margin: 10px 0;
+  }
+}
+
+.ui-pagnation {display: block; line-height: 29px; text-align: center;padding-left: 15%}
+.ui-pagnation div {float: left; min-width: 30px; height: 30px; padding: 0 7px; vertical-align: middle; text-decoration: none; cursor: pointer;}
+.ui-pagnation .next,.ui-pagnation .prev {margin: 0 9px; background-color: #ffffff;color: black; }
+.ui-pagnation .next:before,.ui-pagnation .prev:before {content: '<'; font-size: 14px }
+.ui-pagnation .next:hover,.ui-pagnation .prev:hover {border-color: #50c8ff }
+.ui-pagnation .next:hover:before,.ui-pagnation .prev:hover:before {color: #50c8ff }
+.ui-pagnation .disable.next,.ui-pagnation .prev.disable {background-color: #f3f4f8; border-color: #a0a0a0; cursor: no-drop;}
+.ui-pagnation .disable.next:before,.ui-pagnation .prev.disable:before {color: #a0a0a0 }
+.ui-pagnation .next:before {content: '>'}
+.ui-pagnation .num {margin-left: -1px; padding: 0 7px; border: 1px solid #e5e5e5; color: white }
+.ui-pagnation .num.current,.ui-pagnation .num:hover { background-color: #ffffff; border-color: #f3f4f8; color: #555; }
+.ui-pagnation .ellipsis {width: 42px; height: 30px; color: #707070; line-height: 30px }
+.ui-pagnation input { width: 44px;height: 24px;  color: black; text-align: center;}
+.ui-pagnation .page-go {min-width: 60px; margin-left: 10px; margin-right: 10px; background-color: #a7bbcb; border: 1px solid #879cac; color: #fff }
+.ui-pagnation .page-go:hover {background-color: #87a2b8; border-color: #698397 }
