@@ -7,8 +7,9 @@
 
 #介绍
 1，该项目是一个简单的cms系统demo，涉及到的技术有ReactJs,Redux,react-router,ES6,fetch,Webpack<br>
-2，实现的功能有展示数据，分页，窗口开关，都是基于Redux的模式<br>
+2，实现的功能有数据的增删改查（需配合接口），分页，窗口显示隐藏，都是基于Redux的模式<br>
 3，前后台交互数据用的fetch代替了Ajax，数据传输方式用的是rest，展示用的是假数据，可切换为正常开发模式，把'GETLIST:"src/data/data.json"'的地址转成你的服务地址即可<br>
+4，F12，console中可看见redux中数据流的变化<br>
 4，封装了一些常用的模块，比如fetch获取数据的模块，分页模块<br>
 5，nodeJs作为后台服务，仅用到两个功能http模块和热加载模块<br>
 6，可作为React和Redux的简单脚手架<br>
